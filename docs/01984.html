@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Effective Java! Return Empty Collections or Arrays, Not Nulls</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">有效的Java！返回空集合或数组，而不是空值</h1>
+<blockquote>原文：<a href="https://medium.com/codex/effective-java-return-empty-collections-or-arrays-not-nulls-ed758383cfc0?source=collection_archive---------3-----------------------#2021-06-20">https://medium.com/codex/effective-java-return-empty-collections-or-arrays-not-nulls-ed758383cfc0?source=collection_archive---------3-----------------------#2021-06-20</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><figure class="ev ex im in io ip er es paragraph-image"><div role="button" tabindex="0" class="iq ir di is bf it"><div class="er es il"><img src="../Images/1d9b5e0b08d190c628d7a95d667dc5e2.png" data-original-src="https://miro.medium.com/v2/resize:fit:1400/0*U3Oq-m827-sdIQfB"/></div></div><figcaption class="iw ix et er es iy iz bd b be z dx translated">汉斯·艾斯科宁在<a class="ae ja" href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" rel="noopener ugc nofollow" target="_blank"> Unsplash </a>上拍摄的照片</figcaption></figure><p id="6f8a" class="pw-post-body-paragraph jb jc ho jd b je jf jg jh ji jj jk jl jm jn jo jp jq jr js jt ju jv jw jx jy hh bi translated">类似如下的代码并不少见:</p><pre class="jz ka kb kc fd kd ke kf kg aw kh bi"><span id="0fd6" class="ki kj ho ke b fi kk kl l km kn">private final List&lt;Chesse&gt; cheesesInStock = ...</span><span id="6f85" class="ki kj ho ke b fi ko kl l km kn">public List&lt;Cheese&gt; getInStockCheeses() {<br/>  return cheesesInStock.isEmpty() ? null : new ArrayList&lt;&gt;(cheesesInStock);<br/>}</span></pre><p id="bfd3" class="pw-post-body-paragraph jb jc ho jd b je jf jg jh ji jj jk jl jm jn jo jp jq jr js jt ju jv jw jx jy hh bi translated">方法的使用看起来像这样:</p><pre class="jz ka kb kc fd kd ke kf kg aw kh bi"><span id="d685" class="ki kj ho ke b fi kk kl l km kn">List&lt;Cheese&gt; cheeses<!-- -->…</span></pre></div></div>    
+</body>
+</html>
