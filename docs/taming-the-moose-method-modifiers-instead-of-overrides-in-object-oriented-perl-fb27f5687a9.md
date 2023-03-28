@@ -1,0 +1,7 @@
+# 驯服驼鹿:在面向对象的 Perl 中用方法修饰符代替重写
+
+> 原文：<https://medium.com/codex/taming-the-moose-method-modifiers-instead-of-overrides-in-object-oriented-perl-fb27f5687a9?source=collection_archive---------17----------------------->
+
+![](img/0d6dbf533a06ae982409262fcf65d0aa.png)
+
+上个月[我写了关于使用 Moose 的](https://phoenixtrap.com/2021/07/13/taming-the-moose-picking-the-best-way-to-subclass-perl-methods/) `[override](https://phoenixtrap.com/2021/07/13/taming-the-moose-picking-the-best-way-to-subclass-perl-methods/)` [函数](https://phoenixtrap.com/2021/07/13/taming-the-moose-picking-the-best-way-to-subclass-perl-methods/)来超越超类的方法。 [Chris Prather](https://chris.prather.org/) 在 [#moose IRC chan nel](https://kiwiirc.com/nextclient/#irc://irc.perl.org/moose) 上建议，如果你也在内部调用原始方法，那么`[around](https://metacpan.org/dist/Moose/view/lib/Moose/Manual/MethodModifiers.pod#Around-modifiers)` [方法模块](https://metacpan.org/dist/Moose/view/lib/Moose/Manual/MethodModifiers.pod#Around-modifiers)(或者它的小姐妹`[before](https://metacpan.org/dist/Moose/view/lib/Moose/Manual/MethodModifiers.pod#Before-and-after-Modifiers)` [和](https://metacpan.org/dist/Moose/view/lib/Moose/Manual/MethodModifiers.pod#Before-and-after-Modifiers) `[after](https://metacpan.org/dist/Moose/view/lib/Moose/Manual/MethodModifiers.pod#Before-and-after-Modifiers)`)可能是更好的选择。他没有说“在一分钟内，妈妈…

@@ -1,0 +1,5 @@
+# NVIDIA mellan ox blue field-2 smart NIC 实践教程:“潜水装备”——第四部分:使用 iperf3 的基线吞吐量测试
+
+> 原文：<https://medium.com/codex/nvidia-mellanox-bluefield-2-smartnic-hands-on-tutorial-rig-for-dive-28364edc7732?source=collection_archive---------3----------------------->
+
+在这一集里，我们仔细研究了部署在 Cloudlab 的双节点集群中 Bluefield-2 SmartNIC 的性能。我们走了一段崎岖不平的路才到达这一步，但我们最终做到了。如果你错过了前面的部分，阅读[第一部分](https://cslev.medium.com/getting-your-hands-dirty-with-mellanox-bluefield-2-dpus-deployed-in-cloudlabs-clemson-facility-bcb4e689c7e6)知道如何安装必要的驱动程序；阅读[第二部分](https://cslev.medium.com/nvidia-mellanox-bluefield-2-smartnic-dpdk-rig-for-dive-part-ii-change-mode-of-operation-a994f0f0e543)了解如何安装 DPDK，阅读[第三部分](https://cslev.medium.com/nvidia-mellanox-bluefield-2-smartnic-dpdk-rig-for-dive-part-iii-ultimate-cloudlab-setup-7efd8b47a480)了解如何在 Cloudlab 中实现我们进一步工作的环境。

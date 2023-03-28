@@ -1,0 +1,15 @@
+# 核心基础—使用可变数组
+
+> 原文：<https://medium.com/codex/core-foundation-working-with-mutable-arrays-cea73b913b5e?source=collection_archive---------6----------------------->
+
+关于`CFMutableArray`类型的教程
+
+![](img/7ebcccdb815b2588aa46c8726b44b3f5.png)
+
+图片由[埃里克·卡瑞茨](https://pixabay.com/users/erik_karits-15012370/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6319220)从[皮克斯拜](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6319220)拍摄
+
+# 介绍
+
+在之前的文章[Core Foundation——使用数组](/codex/core-foundation-working-with-arrays-ca89a2685026?source=login--------------------------google_one_tap-----------#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFiZjhhODRkM2VjZDc3ZTlmMmFkNWYwNmZmZDI2MDcwMWRkMDZkOTAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2MjY0NDQ4NTUsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExNzY2MTQyMjc2ODkwMzExMzczMSIsImhkIjoibWF0c2lub3BvdWxvcy5nciIsImVtYWlsIjoicGFuYWdpb3Rpc0BtYXRzaW5vcG91bG9zLmdyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF6cCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsIm5hbWUiOiJQYW5hZ2lvdGlzIE1hdHNpbm9wb3Vsb3MiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dxZGs1c2VFVnAweGJmd3VtU2VuVFJodUREc1Zkb0Npc0NDQnp2PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlBhbmFnaW90aXMiLCJmYW1pbHlfbmFtZSI6Ik1hdHNpbm9wb3Vsb3MiLCJpYXQiOjE2MjY0NDUxNTUsImV4cCI6MTYyNjQ0ODc1NSwianRpIjoiNjQyZDJkMWQ0M2Y0MjhiODQ1YWI4ZDgyYWI5ZWEzYTMyZGY4MTY5OCJ9.OPLPWC4a8k7gQtvpOSbfevLqnpjxwFP7dxTXgzD86TvV_BFRSD6muPKQepY2LlkRIPLTAA85GsEc08gdJ26j5YXqWS6TCFS_4NL5FZ9Cr8uPog3SDgpO4DQS6EH9AvMtNYzUiTXsn-u-QtFKSCho8o2DaM9XtsPqRVrakwIVed2SOFsOvN9_8-i2Zbnuw3MHSj20KN0fuM94ZQ4tHnFEdTau8cMIowighuy6RpPngguAxqfcAjxJvPGIAYD0Zdo4kUDN9yMLfz3y5y0PhCfpEeE3D81H-sgGu2u1lBfMcrhFy7UNzUzuUJrQAkhZPdVdwJGJyOW1aDCqKZA5kE_5Lg)中，我们探讨了为`CFArray`类型 Core Foundation 对象公开的基本 API。这是关于静态不可变数组类型的。
+
+在这篇文章中，我们探索了与可变动态…
